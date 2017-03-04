@@ -1,0 +1,20 @@
+# My entries...
+Backups/
+Test/
+Misc/
+Rejected/
+
+# Service files...
+git*.sh
+curl-ca-bundle.crt
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+photothumb.db
+
+# Folder config file
+Desktop.ini
+
+# Windows shortcuts
+*.lnk
