@@ -1,8 +1,14 @@
 #!/bin/bash
 
+APP_TITLE="AJPapps - Nuerburgring logger Bash ver."
+APP_COPYRIGHT="Линда Кайе 2009-2018. Посвящается Ариэль"
+
 # Получаем аргументы...
 if [ "$2" = "" ] ; then
     if [ "$1" = "--help" ] ; then
+        echo "$APP_TITLE"
+        echo "$APP_COPYRIGHT"
+        echo ""
         echo "Usage: $0 [PATH [USERNAME:GROUP]]"
         echo ""
         echo "PATH - путь к каталогу, куда скрипт будет сохранять картинки."
