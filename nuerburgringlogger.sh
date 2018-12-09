@@ -1,7 +1,7 @@
 #!/bin/bash
 
 APP_TITLE="AJPapps - Nuerburgring logger Bash ver."
-APP_COPYRIGHT="Линда Кайе 2009-2018. Посвящается Ариэль"
+APP_COPYRIGHT="Линда Кайе 2014-2018. Посвящается Ариэль"
 
 # Получаем аргументы...
 if [ "$2" = "" ] ; then
