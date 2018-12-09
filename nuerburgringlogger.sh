@@ -54,18 +54,7 @@ NR_FILE_NAME="$NR_PATH/Nuerburgring Log $(date '+%Y-%m-%d %H-%M-%S').jpg"
 NR_URL="http://www.nuerburgring.de/fileadmin/webcam/webcam.jpg"
 
 # Юзерагент...
-# http://stackoverflow.com/questions/5189913/pick-and-print-one-of-three-strings-at-random-in-bash-script
-PREDEFINED_UA[0]="Mozilla/5.0 (Windows NT 5.1; rv:32.0) Gecko/20100101 Firefox/32.0 SeaMonkey/2.29.1"
-PREDEFINED_UA[1]="Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)"
-PREDEFINED_UA[2]="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)"
-PREDEFINED_UA[3]="Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko"
-PREDEFINED_UA[4]="Opera/9.80 (Windows NT 6.2; WOW64) Presto/2.12.388 Version/12.17"
-PREDEFINED_UA[5]="Mozilla/5.0 (Windows NT 6.3; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0"
-PREDEFINED_UA[6]="Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36"
-
-# Выбираем случайное значение из массива...
-RND=$(( $RANDOM % 7 ))
-UA="${PREDEFINED_UA[$RND]}"
+UA="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:63.0) Gecko/20100101 Firefox/63.0"
 
 # Качаем!
 wget "$NR_URL" -O "$NR_FILE_NAME" --user-agent="$UA" --progress=dot --no-verbose
